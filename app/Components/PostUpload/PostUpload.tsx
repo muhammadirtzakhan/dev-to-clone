@@ -1,7 +1,10 @@
 "use client"
 import styles from "./PostUpload.module.css"
 import { useState } from "react";
-function PostUpload({onPostSuccess}){
+interface PostUploadProps {
+    onPostSuccess: () => Promise<void>;
+}
+function PostUpload({onPostSuccess}: PostUploadProps){
     const [isExpanded,setIsExpanded]=useState(false)
     const [userInput,setUserInput]=useState("")
     const uploadUserData = async()=>{
