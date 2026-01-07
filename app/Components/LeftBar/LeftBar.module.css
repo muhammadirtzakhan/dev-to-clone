@@ -8,3 +8,8 @@
     font-size: 1.3rem;
     font-weight: bold;
 }
+@media (max-width:765px){
+    .mainContainer{
+        display: none;
+    }
+}

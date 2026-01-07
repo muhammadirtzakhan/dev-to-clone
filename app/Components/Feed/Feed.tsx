@@ -6,8 +6,8 @@ import styles from "./Feed.module.css"
 import { userPosts } from "@/app/Data/userPost";
 function Feed(){
     interface Post {
-    postId: number;
-    postContent: string;
+        postId: number;
+        postContent: string;
     }
     const [posts,setPosts]=useState<Post[]>([])
     const fetchPosts=async()=>{
