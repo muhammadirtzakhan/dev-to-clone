@@ -29,7 +29,7 @@ function PostUpload({onPostSuccess}: PostUploadProps){
                 isExpanded?(
                     <div className={styles.postBtnContainer}>
                         <p>Quckie Posts Show up in feed but not in your profile</p>
-                        <button onClick={uploadUserData}>Post</button>
+                        <button onMouseDown={uploadUserData}>Post</button>
                     </div>
                 ):(
                     <div></div>
