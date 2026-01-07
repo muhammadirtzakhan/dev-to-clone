@@ -9,6 +9,6 @@ export async function POST(request: Request){
         postId:userPosts.length+1,
         postContent:data
     }
-    userPosts.push(newPost)
+    userPosts.unshift(newPost)
     return NextResponse.json({ message: "Post created", post: newPost }, { status: 201 });
 }
