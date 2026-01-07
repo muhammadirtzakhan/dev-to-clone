@@ -1,0 +1,9 @@
+.listItem{
+    display: flex;
+    gap: 14px;
+    height:40PX;
+    align-items: center;
+}
+.listItem p{
+    font-size: 1.3rem;
+}

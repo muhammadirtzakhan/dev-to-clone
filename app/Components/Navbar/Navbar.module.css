@@ -1,0 +1,78 @@
+.navbar{
+    height: 56px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #E5E5E5;
+}
+.navbarContainer{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconSection{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    gap: 10px;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 40px;
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    gap: 8px;
+}
+.searchBar input{
+    width: 98%;
+}
+.searchBar input:focus{
+    outline: none;
+}
+.searchBar:focus-within{
+    border: 3px solid #3B49D5;
+}
+.buttonSection{
+    display: flex;
+    gap: 30px;
+}
+.createAccButton{
+    height: 40px;
+    width: 140px;
+    border:2px solid #3B49D5;
+    border-radius: 8px;
+    color: #3B49D5;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.createAccButton:hover{
+    background-color: #3B49D5;
+    color: white;;
+}
+.loginButton{
+ font-weight: bold;
+    font-size: 1rem;
+}
+.loginButton:hover{
+    text-decoration: underline;
+    color: #3B49D5;
+   
+}
+
+
+@media (max-width:765px){
+    .iconSection{
+        justify-content: start;
+        width: 40%;
+    }
+    .searchBar{
+        display: none;
+    }
+    .loginButton{
+        display: none;
+    }
+}
