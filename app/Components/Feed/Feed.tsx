@@ -5,7 +5,11 @@ import PostUpload from "../PostUpload/PostUpload";
 import styles from "./Feed.module.css"
 import { userPosts } from "@/app/Data/userPost";
 function Feed(){
-    const [posts,setPosts]=useState([])
+    interface Post {
+    postId: number;
+    postContent: string;
+    }
+    const [posts,setPosts]=useState<Post[]>([])
     const fetchPosts=async()=>{
         const resp = await fetch("/api/userPosts")
         const res = await resp.json()
